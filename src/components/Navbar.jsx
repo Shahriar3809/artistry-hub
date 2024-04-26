@@ -28,13 +28,24 @@ const Navbar = () => {
         <li>
           <NavLink to="/all-items">All Art & craft Items</NavLink>
         </li>
-        
+        {user ? (
+          <>
+            <li>
+              <NavLink to="/my-craft">My craft</NavLink>
+            </li>
+            <li>
+              <NavLink to="/add-craft">Add craft</NavLink>
+            </li>
+          </>
+        ) : (
+          " "
+        )}
       </>
     );
 
 
     return (
-      <div className="navbar py-5 bg-green-100 z-20">
+      <div className="navbar py-5 bg-base-300 z-20">
         <div className="navbar-start">
           <div className="dropdown z-20">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -60,7 +71,7 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl">Dream Art And Craft</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
@@ -76,7 +87,7 @@ const Navbar = () => {
               >
                 <div className="w-10 rounded-full">
                   <img
-                  className="w-full h-full"
+                    className="w-full h-full"
                     alt="Tailwind CSS Navbar component"
                     src={
                       user.photoURL
@@ -89,18 +100,26 @@ const Navbar = () => {
 
               <button
                 onClick={handleLogOut}
-                className="font-bold bg-orange-500 py-3 px-5 text-white"
+                className="font-bold rounded-md bg-orange-700 py-3 px-5 text-white"
               >
                 Sign Out
               </button>
             </div>
           ) : (
-            <Link
-              to="/login"
-              className="font-bold bg-orange-500 py-3 px-5 text-white"
-            >
-              Login
-            </Link>
+            <div className="flex gap-2">
+              <Link
+                to="/login"
+                className="font-bold rounded-md bg-orange-700 py-3 px-5 text-white"
+              >
+                Login
+              </Link>
+              <Link
+                to="/register"
+                className="font-bold rounded-md bg-orange-700 py-3 px-5 text-white"
+              >
+                Register
+              </Link>
+            </div>
           )}
         </div>
       </div>

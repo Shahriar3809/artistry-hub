@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { FaGithub, FaGoogle, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { AuthContext } from "../AuthProviders/AuthProvider";
 import { updateProfile } from "firebase/auth";
-
+import Swal from "sweetalert2";
 
 
 
@@ -13,7 +13,7 @@ const Register = () => {
     const { createUser, setUser, googleLogin, githubLogin } =
       useContext(AuthContext);
 
-      //  const navigate = useNavigate();
+       const navigate = useNavigate();
 
  const {
    register,
@@ -28,6 +28,15 @@ const [show, setShow] = useState(true);
      .then(res=> {
        console.log(res.user);
        setUser(res.user);
+
+       Swal.fire({
+         icon: "success",
+         title: "Wow!",
+         text: "Account created successfully",
+         footer: "",
+       });
+
+       navigate('/')
        // Update Profile while registration
        updateProfile(res.user, {
          displayName: name,
@@ -40,7 +49,15 @@ const [show, setShow] = useState(true);
            console.log(err);
          });
      })
-     .catch(err=> console.log(err))
+     .catch(err=> {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went Wrong",
+        footer: "",
+      });
+      console.log(err)
+     })
      console.log(email, name, photo, password);
 
    };

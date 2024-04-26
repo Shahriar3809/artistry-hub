@@ -5,6 +5,9 @@ import Root from "../pages/Root";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import AllArtNCraft from "../pages/AllArtNCraft";
+import PrivateRoutes from "../components/PrivateRoutes";
+import AddCraft from "../pages/AddCraft";
+import MyCraft from "../pages/MyCraft";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,7 +27,23 @@ const router = createBrowserRouter([
       },
       {
         path: "/all-items",
-        element: <AllArtNCraft></AllArtNCraft>
+        element: <AllArtNCraft></AllArtNCraft>,
+      },
+      {
+        path: "/add-craft",
+        element: (
+          <PrivateRoutes>
+            <AddCraft></AddCraft>
+          </PrivateRoutes>
+        ),
+      },
+      {
+        path: "/my-craft",
+        element: (
+          <PrivateRoutes>
+            <MyCraft></MyCraft>
+          </PrivateRoutes>
+        ),
       },
     ],
   },

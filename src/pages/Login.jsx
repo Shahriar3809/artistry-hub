@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProviders/AuthProvider";
-
+import Swal from "sweetalert2";
 
 
 const Login = () => {
@@ -25,11 +25,21 @@ const navigate = useNavigate();
         setUser(result.user);
         navigate(location?.state ? location.state : "/");
         event.target.reset();
-        // toast.success("Successfully logged in");
+        Swal.fire({
+          icon: "success",
+          title: "Nice",
+          text: "Login Successful",
+          footer: "",
+        });
       })
       .catch((error) => {
         console.log(error.message);
-        // toast.error("Email or password not matched");
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Email or Password not matched.",
+          footer: '',
+        });
       });
   };
 
