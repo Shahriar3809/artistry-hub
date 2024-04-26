@@ -36,7 +36,7 @@ const [show, setShow] = useState(true);
          footer: "",
        });
 
-       navigate('/')
+       navigate(location?.state ? location.state : "/");
        // Update Profile while registration
        updateProfile(res.user, {
          displayName: name,
@@ -70,7 +70,7 @@ const [show, setShow] = useState(true);
      .then((result) => {
        setUser(result.user);
       console.log(result.user)
-      //  navigate(location?.state ? location.state : "/");
+       navigate(location?.state ? location.state : "/");
        
      })
      .catch((error) => {
@@ -85,6 +85,7 @@ const [show, setShow] = useState(true);
     githubLogin()
       .then((result) => {
         setUser(result.user);
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.log(error.message);
