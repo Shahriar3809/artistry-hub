@@ -1,7 +1,24 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../AuthProviders/AuthProvider";
 
 
 const Navbar = () => {
+
+  const { user, logOut } = useContext(AuthContext);
+  console.log(user)
+
+
+  const handleLogOut = () => {
+     logOut()
+       .then(() => {
+        //  toast.success("Sign Out Successful");
+       })
+       .catch((error) => {
+         console.log(error.message);
+        //  toast.error("Something went wrong");
+       });
+  }
 
     const navLinks = (
       <>
@@ -11,14 +28,15 @@ const Navbar = () => {
         <li>
           <NavLink to="/all-items">All Art & craft Items</NavLink>
         </li>
+        
       </>
     );
 
 
     return (
-      <div className="navbar bg-base-100">
+      <div className="navbar py-5 bg-green-100 z-20">
         <div className="navbar-start">
-          <div className="dropdown">
+          <div className="dropdown z-20">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,12 +63,45 @@ const Navbar = () => {
           <a className="btn btn-ghost text-xl">daisyUI</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-           {navLinks}
-          </ul>
+          <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <Link to='/login' className="font-bold bg-orange-500 py-3 px-5 text-white">Login</Link>
+          {user ? (
+            <div className=" flex gap-3 justify-center items-center">
+              <div
+                tabIndex={0}
+                role="button"
+                data-tip={user.displayName ? user.displayName : ""}
+                className="tooltip  e avatar"
+              >
+                <div className="w-10 rounded-full">
+                  <img
+                  className="w-full h-full"
+                    alt="Tailwind CSS Navbar component"
+                    src={
+                      user.photoURL
+                        ? user.photoURL
+                        : "https://i.ibb.co/c2n4P7t/user-128.png"
+                    }
+                  />
+                </div>
+              </div>
+
+              <button
+                onClick={handleLogOut}
+                className="font-bold bg-orange-500 py-3 px-5 text-white"
+              >
+                Sign Out
+              </button>
+            </div>
+          ) : (
+            <Link
+              to="/login"
+              className="font-bold bg-orange-500 py-3 px-5 text-white"
+            >
+              Login
+            </Link>
+          )}
         </div>
       </div>
     );
