@@ -1,20 +1,25 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 
 const ArtCard = ({ item }) => {
     const {
-    //   customization,
+      // customization,
+      _id,
       photo,
       item_name,
       description,
     //   price,
       processing_time,
     //   rating,
-      stock_status,
+      stock_status, 
     //   sub_category_name,
-     
+    
 
     } = item;
+
+  
+
   return (
     <div className="card card-compact bg-base-100 shadow-xl">
       <figure>
@@ -34,7 +39,10 @@ const ArtCard = ({ item }) => {
           </div>
         </div>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">View Details</button>
+          
+          <Link to={`/details/${_id}`}>
+            <button className="btn btn-primary">View Details</button>
+          </Link>
         </div>
       </div>
     </div>

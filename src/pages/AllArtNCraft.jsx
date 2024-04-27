@@ -4,7 +4,7 @@ import ArtCard from "../components/ArtCard";
 
 const AllArtNCraft = () => {
     const allData = useLoaderData();
-    console.log(allData)
+    // console.log(allData)
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             {
