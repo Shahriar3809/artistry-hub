@@ -18,7 +18,7 @@ const Slider = () => {
           clickable: true,
         }}
         autoplay={{
-          delay: 40000,
+          delay: 4000,
         }}
       >
         <SwiperSlide>
