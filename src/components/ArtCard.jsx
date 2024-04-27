@@ -1,0 +1,48 @@
+import PropTypes from "prop-types";
+
+
+const ArtCard = ({ item }) => {
+    const {
+    //   customization,
+      photo,
+      item_name,
+      description,
+    //   price,
+      processing_time,
+    //   rating,
+      stock_status,
+    //   sub_category_name,
+     
+
+    } = item;
+  return (
+    <div className="card card-compact bg-base-100 shadow-xl">
+      <figure>
+        <img src={photo} alt="photo" />
+      </figure>
+      <div className="card-body">
+        <h2 className="card-title font-bold text-2xl">{item_name}</h2>
+        <p className="">{description}</p>
+        <div>
+          <div className="flex justify-between">
+            <p className="underline">
+              Stock: <span className="font-bold ">{stock_status}</span>
+            </p>
+            <p>
+              Processing Time: <span>{processing_time}</span>
+            </p>
+          </div>
+        </div>
+        <div className="card-actions justify-end">
+          <button className="btn btn-primary">View Details</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+ArtCard.propTypes = {
+  item: PropTypes.object,
+};
+export default ArtCard;

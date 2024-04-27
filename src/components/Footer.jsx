@@ -1,3 +1,5 @@
+import { FaFacebook, FaReddit , FaInstagramSquare } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <footer className=" p-10 mt-10 bg-orange-700 text-white">
@@ -29,6 +31,20 @@ const Footer = () => {
           <a className="link link-hover">Privacy policy</a>
           <a className="link link-hover">Cookie policy</a>
         </nav>
+      </div>
+      <hr /><br />
+      <div className="space-y-3">
+        <h2 className="text-xl text-center">Social Media: </h2>
+        <div className="flex gap-3 text-3xl justify-center ">
+          <FaFacebook />
+
+          <FaInstagramSquare />
+          <FaReddit />
+        </div>
+        <p className="text-center pt-5">
+          {" "}
+          Ⓒ All right reserved to Dream Art And Craft- 2024
+        </p>
       </div>
     </footer>
   );

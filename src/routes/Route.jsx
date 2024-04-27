@@ -8,9 +8,11 @@ import AllArtNCraft from "../pages/AllArtNCraft";
 import PrivateRoutes from "../components/PrivateRoutes";
 import AddCraft from "../pages/AddCraft";
 import MyCraft from "../pages/MyCraft";
+import ErrorPage from "../pages/ErrorPage";
 const router = createBrowserRouter([
   {
     path: "/",
+    errorElement: <ErrorPage></ErrorPage>,
     element: <Root></Root>,
     children: [
       {
@@ -28,6 +30,7 @@ const router = createBrowserRouter([
       {
         path: "/all-items",
         element: <AllArtNCraft></AllArtNCraft>,
+        loader: () => fetch("http://localhost:5001/crafts"),
       },
       {
         path: "/add-craft",

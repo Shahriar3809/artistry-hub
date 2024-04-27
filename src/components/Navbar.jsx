@@ -6,7 +6,7 @@ import { AuthContext } from "../AuthProviders/AuthProvider";
 const Navbar = () => {
 
   const { user, logOut } = useContext(AuthContext);
-  console.log(user)
+  // console.log(user)
 
 
   const handleLogOut = () => {
@@ -30,6 +30,7 @@ const Navbar = () => {
         </li>
         {user ? (
           <>
+            
             <li>
               <NavLink to="/my-craft">My craft</NavLink>
             </li>
