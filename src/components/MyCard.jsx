@@ -5,14 +5,14 @@ import Swal from "sweetalert2";
 
 const ArtCard = ({ item , allData , setAllData}) => {
   const {
-    // customization,
+    customization,
     _id,
     photo,
     item_name,
     description,
-    //   price,
+      price,
     processing_time,
-    //   rating,
+      rating,
     stock_status,
     //   sub_category_name,
   } = item;
@@ -66,6 +66,11 @@ const ArtCard = ({ item , allData , setAllData}) => {
         <h2 className="card-title font-bold text-2xl">{item_name}</h2>
         <p className="">{description}</p>
         <div>
+          <div className="flex justify-between">
+            <p>Price: {price}</p>
+            <p>Rating: {rating}</p>
+            <p>Customization: {customization}</p>
+          </div>
           <div className="flex justify-between">
             <p className="underline">
               Stock: <span className="font-bold ">{stock_status}</span>
