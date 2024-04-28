@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../AuthProviders/AuthProvider";
+import { Tooltip } from "react-tooltip";
 
 
 const Navbar = () => {
@@ -123,10 +124,13 @@ const handleToggle = (e) => {
 
           {user ? (
             <div className=" flex gap-3 justify-center items-center">
+              <Tooltip id="my-tooltip" />
               <div
                 tabIndex={0}
                 role="button"
-                data-tip={user.displayName ? user.displayName : ""}
+                data-tooltip-id="my-tooltip"
+                data-tooltip-content={user?.displayName}
+                data-tooltip-place="top"
                 className="tooltip  e avatar"
               >
                 <div className="w-10 rounded-full">
