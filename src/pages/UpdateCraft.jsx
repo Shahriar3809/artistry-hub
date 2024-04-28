@@ -59,7 +59,9 @@ const UpdateCraft = () => {
 
     return (
       <div className="bg-gray-300 rounded-lg mt-5">
-        <h1 className="text-3xl font-bold text-center pt-5">Update Your Craft: {data.item_name}</h1>
+        <h1 className="text-3xl font-bold text-center pt-5">
+          Update Your Craft: {data.item_name}
+        </h1>
         <form onSubmit={handleUpdate} className="p-3">
           <div className="flex gap-5 justify-center ">
             <div className=" p-5 w-1/2">
@@ -89,18 +91,24 @@ const UpdateCraft = () => {
                 />
 
                 <label className="label">
-                  <span className="label-text text-black">
-                    Sub-Category Name
-                  </span>
+                  <span className="label-text text-black">Category Name</span>
                 </label>
-                <input
-                  type="text"
+
+                <select
                   name="sub_category_name"
                   defaultValue={data.sub_category_name}
-                  placeholder="Sub-Category Name"
-                  className=" p-5 rounded-md"
-                  required
-                />
+                  className="select select-bordered w-full"
+                >
+                  <option disabled selected>
+                    Select a Category
+                  </option>
+                  <option>Landscape Painting</option>
+                  <option>Portrait Drawing</option>
+                  <option>Water Color Painting</option>
+                  <option>Oil Painting</option>
+                  <option>Charcoal Sketching</option>
+                  <option>Cartoon Drawing</option>
+                </select>
               </div>
               <div className="form-control">
                 <label className="label">
@@ -137,6 +145,8 @@ const UpdateCraft = () => {
                 </label>
                 <input
                   type="number"
+                  max={5}
+                  min={1}
                   name="rating"
                   defaultValue={data.rating}
                   placeholder="Rating"
@@ -152,14 +162,18 @@ const UpdateCraft = () => {
                 <label className="label">
                   <span className="label-text text-black">Customization</span>
                 </label>
-                <input
-                  type="text"
+
+                <select
                   defaultValue={data.customization}
                   name="customization"
-                  placeholder="Yes or No"
-                  className=" p-5 rounded-md"
-                  required
-                />
+                  className="select select-bordered w-full"
+                >
+                  <option disabled selected>
+                    Select Customization
+                  </option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
 
                 <label className="label">
                   <span className="label-text text-black">Processing Time</span>
@@ -175,19 +189,25 @@ const UpdateCraft = () => {
                   <div className="absolute right-3 top-4 text-xl"></div>
                 </div>
 
-                <label className="label">
-                  <span className="label-text text-black">Stock Status</span>
-                </label>
-                <div className="relative">
-                  <input
+               
+                  
+                  <label className="label">
+                    <span className="label-text text-black">Stock Status</span>
+                  </label>
+
+                  <select
                     name="stock_status"
-                    type="text"
                     defaultValue={data.stock_status}
-                    placeholder="Stock Status"
-                    className="input text-black input-bordered w-full"
-                  />
-                  <div className="absolute right-3 top-4 text-xl"></div>
-                </div>
+                    className="select select-bordered w-full"
+                  >
+                    <option disabled selected>
+                      Select Stock Status
+                    </option>
+                    <option>Available</option>
+                    <option>Made to Order</option>
+                  </select>
+
+                  
               </div>
 
               <div className="form-control">

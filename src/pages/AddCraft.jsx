@@ -76,17 +76,23 @@ const AddCraft = () => {
                 />
 
                 <label className="label">
-                  <span className="label-text text-black">
-                    Sub-Category Name
-                  </span>
+                  <span className="label-text text-black">Category Name</span>
                 </label>
-                <input
-                  type="text"
+
+                <select
                   name="sub_category_name"
-                  placeholder="Sub-Category Name"
-                  className=" p-5 rounded-md"
-                  required
-                />
+                  className="select select-bordered w-full"
+                >
+                  <option disabled selected>
+                    Select a Category
+                  </option>
+                  <option>Landscape Painting</option>
+                  <option>Portrait Drawing</option>
+                  <option>Water Color Painting</option>
+                  <option>Oil Painting</option>
+                  <option>Charcoal Sketching</option>
+                  <option>Cartoon Drawing</option>
+                </select>
               </div>
               <div className="form-control">
                 <label className="label">
@@ -121,6 +127,8 @@ const AddCraft = () => {
                 </label>
                 <input
                   type="number"
+                  max={5}
+                  min={1}
                   name="rating"
                   placeholder="Rating"
                   className="p-5 rounded-md"
@@ -135,13 +143,17 @@ const AddCraft = () => {
                 <label className="label">
                   <span className="label-text text-black">Customization</span>
                 </label>
-                <input
-                  type="text"
+
+                <select
                   name="customization"
-                  placeholder="Yes or No"
-                  className=" p-5 rounded-md"
-                  required
-                />
+                  className="select select-bordered w-full"
+                >
+                  <option disabled selected>
+                    Select Customization
+                  </option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
 
                 <label className="label">
                   <span className="label-text text-black">Processing Time</span>
@@ -159,15 +171,17 @@ const AddCraft = () => {
                 <label className="label">
                   <span className="label-text text-black">Stock Status</span>
                 </label>
-                <div className="relative">
-                  <input
-                    name="stock_status"
-                    type="text"
-                    placeholder="Stock Status"
-                    className="input text-black input-bordered w-full"
-                  />
-                  <div className="absolute right-3 top-4 text-xl"></div>
-                </div>
+
+                <select
+                  name="stock_status"
+                  className="select select-bordered w-full"
+                >
+                  <option disabled selected>
+                    Select Stock Status
+                  </option>
+                  <option>Available</option>
+                  <option>Made to Order</option>
+                </select>
               </div>
 
               <div className="form-control">
