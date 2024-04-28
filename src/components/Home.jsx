@@ -1,5 +1,6 @@
 import Accordian from "./Accordian";
 import CategorySection from "./CategorySection";
+import Contact from "./Contact";
 import CraftItemSection from "./CraftItemSection";
 import Slider from "./Slider";
 
@@ -33,6 +34,9 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div>
+          <Contact></Contact>
         </div>
       </div>
     );

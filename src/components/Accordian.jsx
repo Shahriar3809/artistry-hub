@@ -83,6 +83,20 @@ const Accordian = () => {
             </p>
           </div>
         </div>
+        <div className="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div className="collapse-title text-xl font-medium">
+            What is your privacy policy?
+          </div>
+          <div className="collapse-content">
+            <p>
+              We take your privacy seriously and are committed to protecting
+              your personal information. Please refer to our privacy policy page
+              for detailed information on how we collect, use, and safeguard
+              your data.
+            </p>
+          </div>
+        </div>
       </div>
     );
 };
