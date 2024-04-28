@@ -63,8 +63,8 @@ const UpdateCraft = () => {
           Update Your Craft: {data.item_name}
         </h1>
         <form onSubmit={handleUpdate} className="p-3">
-          <div className="flex gap-5 justify-center ">
-            <div className=" p-5 w-1/2">
+          <div className="flex flex-col md:flex-row md:gap-5 justify-center ">
+            <div className=" md:p-5 w-full md:w-1/2">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text text-black">Name</span>
@@ -157,7 +157,7 @@ const UpdateCraft = () => {
               <div className="form-control"></div>
             </div>
 
-            <div className=" p-5 w-1/2">
+            <div className=" md:p-5 w-full md:w-1/2">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text text-black">Customization</span>

@@ -25,6 +25,19 @@ const AddCraft = () => {
       const craftItem = {item_name, photo, sub_category_name, description, price, rating, customization, processing_time, stock_status, user_name, user_email}
       console.log(craftItem)
 
+
+      fetch("http://localhost:5001/painting", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(craftItem),
+      })
+        .then((res) => res.json())
+        .then((data) => console.log(data));
+
+
+        
       fetch("http://localhost:5001/crafts", {
         method: 'POST',
         headers: {
@@ -50,8 +63,8 @@ const AddCraft = () => {
     return (
       <div className="bg-gray-300 rounded-lg mt-5">
         <form onSubmit={handleAddCraft} className="p-3">
-          <div className="flex gap-5 justify-center ">
-            <div className=" p-5 w-1/2">
+          <div className="flex flex-col md:flex-row md:gap-5 justify-center ">
+            <div className=" md:p-5 w-full md:w-1/2">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text text-black">Name</span>
@@ -138,7 +151,7 @@ const AddCraft = () => {
               <div className="form-control"></div>
             </div>
 
-            <div className=" p-5 w-1/2">
+            <div className=" md:p-5 w-full md:w-1/2">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text text-black">Customization</span>
@@ -219,7 +232,7 @@ const AddCraft = () => {
           </div>
 
           <input
-            className="btn btn-primary w-full font-bold text-xl"
+            className="btn mt-5 bg-orange-600 text-white w-full font-bold text-xl"
             type="submit"
             value="Add This"
           />

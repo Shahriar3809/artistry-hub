@@ -27,8 +27,8 @@ const AllArtNCraft = () => {
                 <td>{item.item_name}</td>
                 <td>$ {item.price} </td>
                 <td>{item.rating}</td>
-                <td>
-                  <Link className="bg-orange-500 p-2 text-white rounded-sm" to={`/details/${item._id}`}>
+                <td className=" flex items-center justify-center">
+                  <Link className="bg-orange-500 md:p-2 text-white text-center rounded-sm" to={`/details/${item._id}`}>
                     View Details
                   </Link>
                 </td>

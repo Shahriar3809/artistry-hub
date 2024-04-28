@@ -18,12 +18,12 @@ const Details = () => {
   
   return (
     <div className="flex flex-col md:flex-row gap-8 p-5 bg-gray-100 rounded-lg mt-5">
-      <div className="w-1/2 md:w-full">
-        <img className="w-full" src={photo} alt="" />
+      <div className="md:w-1/2 w-full">
+        <img className="w-full h-full" src={photo} alt="" />
       </div>
-      <div className="w-1/2 md:w-full space-y-5">
+      <div className="md:w-1/2 w-full space-y-5">
         <div>
-          <h1 className="text-5xl font-bold text-orange-700">{item_name}</h1>
+          <h1 className="text-5xl text-center md:text-left p-3 md:p-0 font-bold text-orange-700">{item_name}</h1>
           <p className="font-bold text-2xl  text-black">
             Stock Status: {stock_status}
           </p>
@@ -38,13 +38,14 @@ const Details = () => {
           <p>
             <span className="text-xl font-bold">Details:</span> {description}
           </p>
-         
         </div>
         <div className="space-y-5">
           <p className="text-xl font-bold">Ratings: {rating}</p>
-           <p>
+          <p>
             <span className="text-xl font-bold">Processing Time: </span>
-            <span className="underline font-bold text-2xl">{processing_time}</span>
+            <span className="underline font-bold text-2xl">
+              {processing_time}
+            </span>
           </p>
           <p className="text-xl bg-orange-600 text-white text-center font-bold p-2">
             Category: <span className="underline">{sub_category_name}</span>

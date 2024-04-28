@@ -1,3 +1,4 @@
+import CategorySection from "./CategorySection";
 import CraftItemSection from "./CraftItemSection";
 import Slider from "./Slider";
 
@@ -10,6 +11,9 @@ const Home = () => {
         </div>
         <div>
           <CraftItemSection></CraftItemSection>
+        </div>
+        <div>
+          <CategorySection></CategorySection>
         </div>
       </div>
     );

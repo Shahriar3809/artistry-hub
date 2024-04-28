@@ -41,7 +41,7 @@ const ArtCard = ({ item }) => {
         <div className="card-actions justify-end">
           
           <Link to={`/details/${_id}`}>
-            <button className="btn btn-primary">View Details</button>
+            <button className="btn bg-orange-600 text-white">View Details</button>
           </Link>
         </div>
       </div>

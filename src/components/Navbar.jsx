@@ -95,7 +95,7 @@ const handleToggle = (e) => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
-        <div className="navbar-end gap-3">
+        <div className="navbar-end md:gap-3">
           {/* theme */}
           <div>
             <label className="swap swap-rotate">
@@ -104,7 +104,7 @@ const handleToggle = (e) => {
 
               {/* sun icon */}
               <svg
-                className="swap-on fill-current w-10 h-10"
+                className="swap-on fill-current md:w-10 w-8 h-8 md:h-10"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
@@ -113,7 +113,7 @@ const handleToggle = (e) => {
 
               {/* moon icon */}
               <svg
-                className="swap-off fill-current w-10 h-10"
+                className="swap-off fill-current w-8 md: 10 h-8 md:h-10"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
@@ -133,7 +133,7 @@ const handleToggle = (e) => {
                 data-tooltip-place="top"
                 className="tooltip  e avatar"
               >
-                <div className="w-10 rounded-full">
+                <div className="w-8 md:w-10 rounded-full">
                   <img
                     className="w-full h-full"
                     alt="Tailwind CSS Navbar component"
@@ -148,7 +148,7 @@ const handleToggle = (e) => {
 
               <button
                 onClick={handleLogOut}
-                className="font-bold rounded-md bg-orange-700 py-3 px-5 text-white"
+                className="font-bold rounded-md bg-orange-700 md:py-3 p-1 md:px-5 text-white"
               >
                 Sign Out
               </button>

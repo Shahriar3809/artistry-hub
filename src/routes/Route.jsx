@@ -11,6 +11,7 @@ import MyCraft from "../pages/MyCraft";
 import ErrorPage from "../pages/ErrorPage";
 import Details from "../pages/Details";
 import UpdateCraft from "../pages/UpdateCraft";
+import CategoryData from "../pages/CategoryData";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -65,6 +66,12 @@ const router = createBrowserRouter([
         element: <UpdateCraft></UpdateCraft>,
         loader: ({ params }) =>
           fetch(`http://localhost:5001/details/${params.id}`),
+      },
+      {
+        path: "/categoryData/:sub_category_name",
+        element: <CategoryData></CategoryData>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5001/category/${params.sub_category_name}`),
       },
     ],
   },

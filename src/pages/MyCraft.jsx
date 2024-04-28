@@ -26,7 +26,7 @@ const MyCraft = () => {
         <h2 className="text-2xl p-5 font-bold text-center text-orange-700">
           My Added Craft
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div className="p-3 lg:p-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {allData ? (
             allData.map((item) => (
               <MyCard key={item._id} item={item} allData={allData} setAllData={setAllData}></MyCard>
