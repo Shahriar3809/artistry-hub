@@ -22,14 +22,14 @@ const Home = () => {
             Frequently Asked Questions: FAQ
           </h1>
           <div className="border pt-5">
-            <div className="flex gap-3 p-5">
-              <div className="w-1/2">
+            <div className="flex flex-col md:flex-row gap-3 p-5">
+              <div className="md:w-1/2 w-full">
                 <img
                   src="https://i.ibb.co/0QmVrJ7/ask-1014060-640.jpg"
                   alt=""
                 />
               </div>
-              <div className="w-1/2">
+              <div className="md:w-1/2 w-full">
                 <Accordian></Accordian>
               </div>
             </div>
