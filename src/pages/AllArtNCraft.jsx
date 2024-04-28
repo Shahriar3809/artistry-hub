@@ -7,6 +7,7 @@ const AllArtNCraft = () => {
     console.log(allData)
     return (
       <div className="overflow-x-auto">
+        <h1 className="text-2xl text-center font-bold p-5   text-orange-600">All Item</h1>
         <table className="table">
           {/* head */}
           <thead>
