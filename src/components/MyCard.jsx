@@ -28,7 +28,7 @@ const ArtCard = ({ item, setFilteredData, filteredData }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5001/crafts/${id}`, {
+        fetch(`https://art-and-craft-server-two.vercel.app/crafts/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

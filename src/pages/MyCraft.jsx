@@ -11,7 +11,7 @@ const [originalData, setOriginalData] = useState(null);
 const [filteredData, setFilteredData] = useState(null);
 
 useEffect(() => {
-    fetch(`http://localhost:5001/myCraft/${email}`)
+    fetch(`https://art-and-craft-server-two.vercel.app/myCraft/${email}`)
         .then((res) => res.json())
         .then((data) => {
             setOriginalData(data);

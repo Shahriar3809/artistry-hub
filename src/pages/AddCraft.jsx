@@ -26,7 +26,7 @@ const AddCraft = () => {
       console.log(craftItem)
       event.target.reset()
 
-      // fetch("http://localhost:5001/painting", {
+      // fetch("https://art-and-craft-server-two.vercel.app/painting", {
       //   method: "POST",
       //   headers: {
       //     "content-type": "application/json",
@@ -38,7 +38,7 @@ const AddCraft = () => {
 
 
         
-      fetch("http://localhost:5001/crafts", {
+      fetch("https://art-and-craft-server-two.vercel.app/crafts", {
         method: 'POST',
         headers: {
           'content-type': 'application/json'

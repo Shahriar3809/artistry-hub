@@ -35,7 +35,7 @@ const UpdateCraft = () => {
        };
     //    console.log(craftItem);
 
-       fetch(`http://localhost:5001/crafts/${data._id}`, {
+       fetch(`https://art-and-craft-server-two.vercel.app/crafts/${data._id}`, {
          method: "PUT",
          headers: {
            "content-type": "application/json",

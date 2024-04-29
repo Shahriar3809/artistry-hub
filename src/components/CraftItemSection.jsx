@@ -6,7 +6,7 @@ const CraftItemSection = () => {
     const [all, setAll] = useState(null)
 
     useEffect(()=> {
-        fetch("http://localhost:5001/crafts")
+        fetch("https://art-and-craft-server-two.vercel.app/crafts")
         .then(res=> res.json())
         .then(data => setAll(data))
     }, [])
