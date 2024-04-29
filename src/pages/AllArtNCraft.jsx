@@ -7,7 +7,9 @@ const AllArtNCraft = () => {
     console.log(allData)
     return (
       <div className="overflow-x-auto">
-        <h1 className="text-2xl text-center font-bold p-5   text-orange-600">All Item</h1>
+        <h1 className="text-2xl text-center font-bold p-5   text-orange-600">
+          All Item
+        </h1>
         <table className="table">
           {/* head */}
           <thead>
@@ -16,6 +18,7 @@ const AllArtNCraft = () => {
               <th>Item</th>
               <th>Price</th>
               <th>Rating</th>
+              <th>Stock Status</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -27,8 +30,12 @@ const AllArtNCraft = () => {
                 <td>{item.item_name}</td>
                 <td>$ {item.price} </td>
                 <td>{item.rating}</td>
+                <td>{item.stock_status} </td>
                 <td className=" flex items-center justify-center">
-                  <Link className="bg-orange-500 md:p-2 text-white text-center rounded-sm" to={`/details/${item._id}`}>
+                  <Link
+                    className="bg-orange-500 md:p-2 text-white text-center rounded-sm"
+                    to={`/details/${item._id}`}
+                  >
                     View Details
                   </Link>
                 </td>

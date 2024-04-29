@@ -41,13 +41,13 @@ const handleNo = () => {
 
     return (
       <div>
-        <h2 className="text-2xl p-5 font-bold text-center text-orange-700">
+        <h2 className="text-2xl m-5 font-bold text-center text-orange-700">
           My Added Craft
         </h2>
 
-        <div className=" w-[250px] mx-auto mb-5">
+        <div className=" w-[250px] mx-auto pl-6 mb-5">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn m-1">
+            <div tabIndex={0} role="button" className="btn">
               Filter By Customization
               <IoIosArrowDown />
             </div>
