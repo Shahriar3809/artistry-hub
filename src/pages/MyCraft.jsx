@@ -42,7 +42,7 @@ const handleNo = () => {
     return (
       <div>
         <h2 className="text-2xl m-5 font-bold text-center text-orange-700">
-          My Added Craft
+          Craft Added By Me:
         </h2>
 
         <div className=" w-[250px] mx-auto pl-6 mb-5">

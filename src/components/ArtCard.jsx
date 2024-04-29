@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-
+import { FaRegStar } from "react-icons/fa";
 
 const ArtCard = ({ item }) => {
     const {
@@ -46,8 +46,11 @@ const ArtCard = ({ item }) => {
             <p>
               Price: <span>$ {price}</span>
             </p>
-            <p>
-              Rating: <span>{rating} *</span>
+            <p className="flex gap-1">
+              Rating:{" "}
+              <span className="flex gap-1 items-center">
+                {rating} <FaRegStar />
+              </span>
             </p>
           </div>
         </div>

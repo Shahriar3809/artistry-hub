@@ -2,7 +2,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
-
+import { FaRegStar } from "react-icons/fa";
 const ArtCard = ({ item, setFilteredData, filteredData }) => {
   const {
     customization,
@@ -60,18 +60,22 @@ const ArtCard = ({ item, setFilteredData, filteredData }) => {
       </figure>
       <div className="card-body">
         <h2 className="card-title font-bold text-2xl">{item_name}</h2>
-        <p className="">{description}</p>
+        <p className="">
+          <span className="font-bold">Details:</span> {description}
+        </p>
         <div>
-          <div className="flex justify-between">
+          <div className="flex justify-between font-bold">
             <p>Price: {price}</p>
-            <p>Rating: {rating}</p>
+            <p className="flex gap-1">
+              Rating: {rating} <FaRegStar />
+            </p>
             <p>Customization: {customization}</p>
           </div>
           <div className="flex justify-between">
             <p className="underline">
               Stock: <span className="font-bold ">{stock_status}</span>
             </p>
-            <p>
+            <p className="font-bold">
               Processing Time: <span>{processing_time}</span>
             </p>
           </div>
