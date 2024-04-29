@@ -124,7 +124,7 @@ const [show, setShow] = useState(true);
                     {...register("name", { required: true })}
                     type="text"
                     placeholder="Name"
-                    className="p-5 text-black rounded-md"
+                    className="p-5 text-gray-400 rounded-md"
                     required
                   />
 
@@ -135,7 +135,7 @@ const [show, setShow] = useState(true);
                     type="text"
                     {...register("photo")}
                     placeholder="Photo URL"
-                    className="p-5 text-black rounded-md"
+                    className="p-5 text-gray-500 rounded-md"
                     required
                   />
 
@@ -146,7 +146,7 @@ const [show, setShow] = useState(true);
                     type="email"
                     {...register("email", { required: true })}
                     placeholder="Email"
-                    className=" p-5 text-black rounded-md"
+                    className=" p-5 text-gray-500 rounded-md"
                     required
                   />
                 </div>
@@ -167,7 +167,7 @@ const [show, setShow] = useState(true);
                       type={show ? "password" : "text"}
                       name="password"
                       placeholder="password"
-                      className="input text-black input-bordered w-full"
+                      className="input text-gray-500 k input-bordered w-full"
                     />
                     <div
                       onClick={() => {
@@ -186,10 +186,7 @@ const [show, setShow] = useState(true);
                   )}
 
                   <label className="label">
-                    <a
-                      href="#"
-                      className="label-text-alt text-black link link-hover"
-                    >
+                    <a href="#" className="label-text-alt  link link-hover">
                       Forgot password?
                     </a>
                   </label>

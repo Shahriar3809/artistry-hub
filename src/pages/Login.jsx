@@ -98,7 +98,7 @@ const navigate = useNavigate();
                     type="email"
                     name="email"
                     placeholder="email"
-                    className=" p-5 rounded-md text-black"
+                    className=" p-5 rounded-md text-gray-500"
                     required
                   />
                 </div>
@@ -110,7 +110,7 @@ const navigate = useNavigate();
                     type="password"
                     name="password"
                     placeholder="password"
-                    className="p-5 rounded-md text-black"
+                    className="p-5 rounded-md text-gray-500"
                     required
                   />
                   <label className="label">
