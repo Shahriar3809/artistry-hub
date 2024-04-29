@@ -60,7 +60,7 @@ const ArtCard = ({ item , allData , setAllData}) => {
   return (
     <div className="card card-compact bg-base-100 shadow-xl">
       <figure>
-        <img src={photo} alt="photo" />
+        <img className="h-[250px]" src={photo} alt="photo" />
       </figure>
       <div className="card-body">
         <h2 className="card-title font-bold text-2xl">{item_name}</h2>

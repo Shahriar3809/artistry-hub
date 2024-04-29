@@ -26,15 +26,15 @@ const AddCraft = () => {
       console.log(craftItem)
 
 
-      fetch("http://localhost:5001/painting", {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(craftItem),
-      })
-        .then((res) => res.json())
-        .then((data) => console.log(data));
+      // fetch("http://localhost:5001/painting", {
+      //   method: "POST",
+      //   headers: {
+      //     "content-type": "application/json",
+      //   },
+      //   body: JSON.stringify(craftItem),
+      // })
+      //   .then((res) => res.json())
+      //   .then((data) => console.log(data));
 
 
         

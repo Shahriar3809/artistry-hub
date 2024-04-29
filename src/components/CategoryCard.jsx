@@ -13,7 +13,7 @@ const CategoryCard = ({ item }) => {
   return (
     <div className=" border card-side bg-base-100 shadow-xl">
       <figure>
-        <img className="w-3/3  " src={photo} alt="Movie" />
+        <img className="w-3/3 h-[500px] " src={photo} alt="Movie" />
       </figure>
       <div className="p-2 space-y-3">
         <h2 className="card-title font-bold text-2xl">{item_name}</h2>
