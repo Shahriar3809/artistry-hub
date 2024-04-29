@@ -14,11 +14,11 @@ const AllArtNCraft = () => {
           {/* head */}
           <thead>
             <tr>
-              <th>Serial No</th>
+              <th>No</th>
               <th>Item</th>
               <th>Price</th>
               <th>Rating</th>
-              <th>Stock Status</th>
+              <th>Stock</th>
               <th>Action</th>
             </tr>
           </thead>

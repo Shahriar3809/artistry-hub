@@ -13,7 +13,7 @@ const CategoryCard = ({ item }) => {
   return (
     <div className=" border card-side bg-base-100 shadow-xl">
       <figure>
-        <img className="w-3/3 h-[500px] " src={photo} alt="Movie" />
+        <img className="w-3/3 h-[450px] " src={photo} alt="Movie" />
       </figure>
       <div className="p-2 space-y-3">
         <div className="flex justify-between">
@@ -24,7 +24,7 @@ const CategoryCard = ({ item }) => {
         <div className="card-actions ">
           <Link
             to={`/categoryData/${sub_category_name}`}
-            className="btn bg-orange-600 text-white w-full text-xl font-bold"
+            className="btn bg-orange-600 text-white w-full md:text-xl font-bold"
           >
             {" "}
             See {sub_category_name} Category Data
