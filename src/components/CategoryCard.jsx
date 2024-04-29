@@ -16,7 +16,10 @@ const CategoryCard = ({ item }) => {
         <img className="w-3/3 h-[500px] " src={photo} alt="Movie" />
       </figure>
       <div className="p-2 space-y-3">
-        <h2 className="card-title font-bold text-2xl">{item_name}</h2>
+        <div className="flex justify-between">
+          <h2 className="card-title font-bold text-2xl">{item_name}</h2>
+          <h2 className="bg-orange-300 rounded-l-full px-8 -mr-2 font-bold text-gray-700 p-3">Category: {sub_category_name}</h2>
+        </div>
         <p>{description}</p>
         <div className="card-actions ">
           <Link

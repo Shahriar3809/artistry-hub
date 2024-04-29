@@ -35,7 +35,7 @@ const ArtCard = ({ item }) => {
             <p className="underline">
               Stock: <span className="font-bold ">{stock_status}</span>
             </p>
-            <p>
+            <p className="font-bold">
               Processing Time: <span>{processing_time}</span>
             </p>
           </div>

@@ -20,7 +20,7 @@ const Slider = () => {
 
 
   return (
-    <div className="z-10 mt-5">
+    <div className="z-10 rounded-lg mt-5">
       <div></div>
 
       <Swiper
@@ -36,7 +36,7 @@ const Slider = () => {
         }}
       >
         <SwiperSlide>
-          <div className="bg-[linear-gradient(to_top,rgba(00,00,00,0.2),rgba(00,00,00,0.5)),url('https://i.ibb.co/pQNWYjL/pexels-fariphotography-905844.jpg')] text-white flex justify-center h-[50vh] md:h-[70vh] w-full lg:h-[70vh] bg-cover bg-center bg-no-repeat ">
+          <div className="bg-[linear-gradient(to_top,rgba(00,00,00,0.2),rgba(00,00,00,0.5)),url('https://i.ibb.co/pQNWYjL/pexels-fariphotography-905844.jpg')] rounded-lg text-white flex justify-center h-[50vh] md:h-[70vh] w-full lg:h-[70vh] bg-cover bg-center bg-no-repeat ">
             <div className=" space-y-5 md:space-y-10 p-24 flex flex-col items-center justify-center">
               <h1 className=" ">
                 <h1
@@ -75,7 +75,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className=" bg-[linear-gradient(to_top,rgba(00,00,00,0.2),rgba(00,00,00,0.5)),url('https://i.ibb.co/mNwQSwB/pexels-sankyrao90-716107.jpg')]  text-white flex justify-center h-[50vh] md:h-[70vh] w-full lg:h-[70vh] bg-cover bg-center bg-no-repeat ">
+          <div className="rounded-lg bg-[linear-gradient(to_top,rgba(00,00,00,0.2),rgba(00,00,00,0.5)),url('https://i.ibb.co/mNwQSwB/pexels-sankyrao90-716107.jpg')]  text-white flex justify-center h-[50vh] md:h-[70vh] w-full lg:h-[70vh] bg-cover bg-center bg-no-repeat ">
             <div className=" space-y-5 md:space-y-10 p-24 flex flex-col items-center justify-center">
               <h1 className="text-7xl text-center font-bold ">
                 <h1
@@ -119,7 +119,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[linear-gradient(to_top,rgba(00,00,00,0.2),rgba(00,00,00,0.5)),url('https://i.ibb.co/sj3nFsp/pexels-aliciazinn-159984.jpg')]   text-white flex justify-center w-full lg:h-[70vh] h-[50vh] md:h-[70vh] bg-cover bg-center bg-no-repeat ">
+          <div className="rounded-lg bg-[linear-gradient(to_top,rgba(00,00,00,0.2),rgba(00,00,00,0.5)),url('https://i.ibb.co/sj3nFsp/pexels-aliciazinn-159984.jpg')]   text-white flex justify-center w-full lg:h-[70vh] h-[50vh] md:h-[70vh] bg-cover bg-center bg-no-repeat ">
             <div className=" space-y-5 md:space-y-10 p-24 flex flex-col items-center justify-center">
               <h1 className="text-7xl text-center font-bold ">
                 <h1
@@ -158,7 +158,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className=" bg-[linear-gradient(to_top,rgba(00,00,00,0.2),rgba(00,00,00,0.5)),url('https://i.ibb.co/YfQLDQh/pexels-digitalbuggu-352899.jpg')]  text-white flex justify-center w-full lg:h-[70vh] h-[50vh] md:h-[70vh] bg-cover bg-center bg-no-repeat ">
+          <div className="rounded-lg bg-[linear-gradient(to_top,rgba(00,00,00,0.2),rgba(00,00,00,0.5)),url('https://i.ibb.co/YfQLDQh/pexels-digitalbuggu-352899.jpg')]  text-white flex justify-center w-full lg:h-[70vh] h-[50vh] md:h-[70vh] bg-cover bg-center bg-no-repeat ">
             <div className=" space-y-5 md:space-y-10 p-24 flex flex-col items-center justify-center">
               <h1 className="text-7xl text-center font-bold ">
                 <h1
@@ -197,7 +197,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className=" bg-[linear-gradient(to_top,rgba(00,00,00,0.2),rgba(00,00,00,0.5)),url('https://i.ibb.co/X542FCM/victoria-berman-U-ouht-Pg-HH4-unsplash.jpg')]  text-white flex justify-center w-full h-[50vh] md:h-[70vh] lg:h-[70vh] bg-cover bg-center bg-no-repeat ">
+          <div className="rounded-lg bg-[linear-gradient(to_top,rgba(00,00,00,0.2),rgba(00,00,00,0.5)),url('https://i.ibb.co/X542FCM/victoria-berman-U-ouht-Pg-HH4-unsplash.jpg')]  text-white flex justify-center w-full h-[50vh] md:h-[70vh] lg:h-[70vh] bg-cover bg-center bg-no-repeat ">
             <div className=" space-y-5 md:space-y-10 p-24 flex flex-col items-center justify-center">
               <h1 className="text-7xl text-center font-bold ">
                 <h1
