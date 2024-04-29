@@ -224,6 +224,7 @@ const AddCraft = () => {
                     value={user.email}
                     placeholder="User Email"
                     className="input text-black input-bordered w-full"
+                    required
                   />
                   <div className="absolute right-3 top-4 text-xl"></div>
                 </div>
