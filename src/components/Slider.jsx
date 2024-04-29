@@ -39,7 +39,7 @@ const Slider = () => {
           <div className="bg-[linear-gradient(to_top,rgba(00,00,00,0.2),rgba(00,00,00,0.5)),url('https://i.ibb.co/pQNWYjL/pexels-fariphotography-905844.jpg')] rounded-lg text-white flex justify-center h-[50vh] md:h-[70vh] w-full lg:h-[70vh] bg-cover bg-center bg-no-repeat ">
             <div className=" space-y-5 md:space-y-10 p-24 flex flex-col items-center justify-center">
               <h1 className=" ">
-                <h1
+                <p
                   className="text-5xl md:text-7xl text-center font-bold"
                   style={{
                     paddingTop: "5rem",
@@ -62,7 +62,7 @@ const Slider = () => {
                       // onType={handleType}
                     />
                   </span>
-                </h1>
+                </p>
               </h1>
               <p className="text-xl md:text-2xl text-center">
                 The items are arranged on a wooden surface, casting soft shadows
@@ -78,7 +78,7 @@ const Slider = () => {
           <div className="rounded-lg bg-[linear-gradient(to_top,rgba(00,00,00,0.2),rgba(00,00,00,0.5)),url('https://i.ibb.co/mNwQSwB/pexels-sankyrao90-716107.jpg')]  text-white flex justify-center h-[50vh] md:h-[70vh] w-full lg:h-[70vh] bg-cover bg-center bg-no-repeat ">
             <div className=" space-y-5 md:space-y-10 p-24 flex flex-col items-center justify-center">
               <h1 className="text-7xl text-center font-bold ">
-                <h1
+                <p
                   className="text-5xl md:text-7xl text-center font-bold"
                   style={{
                     paddingTop: "5rem",
@@ -106,7 +106,7 @@ const Slider = () => {
                       // onType={handleType}
                     />
                   </span>
-                </h1>
+                </p>
               </h1>
               <p className="text-xl md:text-2xl text-center">
                 A vibrant display of various-sized bowls, each adorned with
@@ -122,7 +122,7 @@ const Slider = () => {
           <div className="rounded-lg bg-[linear-gradient(to_top,rgba(00,00,00,0.2),rgba(00,00,00,0.5)),url('https://i.ibb.co/sj3nFsp/pexels-aliciazinn-159984.jpg')]   text-white flex justify-center w-full lg:h-[70vh] h-[50vh] md:h-[70vh] bg-cover bg-center bg-no-repeat ">
             <div className=" space-y-5 md:space-y-10 p-24 flex flex-col items-center justify-center">
               <h1 className="text-7xl text-center font-bold ">
-                <h1
+                <p
                   className="text-5xl md:text-7xl text-center font-bold"
                   style={{
                     paddingTop: "5rem",
@@ -145,7 +145,7 @@ const Slider = () => {
                       // onType={handleType}
                     />
                   </span>
-                </h1>
+                </p>
               </h1>
               <p className="text-xl md:text-2xl text-center">
                 An artist, hands covered in paint, skillfully applies black or
@@ -161,7 +161,7 @@ const Slider = () => {
           <div className="rounded-lg bg-[linear-gradient(to_top,rgba(00,00,00,0.2),rgba(00,00,00,0.5)),url('https://i.ibb.co/YfQLDQh/pexels-digitalbuggu-352899.jpg')]  text-white flex justify-center w-full lg:h-[70vh] h-[50vh] md:h-[70vh] bg-cover bg-center bg-no-repeat ">
             <div className=" space-y-5 md:space-y-10 p-24 flex flex-col items-center justify-center">
               <h1 className="text-7xl text-center font-bold ">
-                <h1
+                <p
                   className="text-5xl md:text-7xl text-center font-bold"
                   style={{
                     paddingTop: "5rem",
@@ -184,7 +184,7 @@ const Slider = () => {
                       // onType={handleType}
                     />
                   </span>
-                </h1>
+                </p>
               </h1>
               <p className="text-xl md:text-2xl text-center">
                 Three teapots, each with its unique pattern and color scheme,
@@ -200,7 +200,7 @@ const Slider = () => {
           <div className="rounded-lg bg-[linear-gradient(to_top,rgba(00,00,00,0.2),rgba(00,00,00,0.5)),url('https://i.ibb.co/X542FCM/victoria-berman-U-ouht-Pg-HH4-unsplash.jpg')]  text-white flex justify-center w-full h-[50vh] md:h-[70vh] lg:h-[70vh] bg-cover bg-center bg-no-repeat ">
             <div className=" space-y-5 md:space-y-10 p-24 flex flex-col items-center justify-center">
               <h1 className="text-7xl text-center font-bold ">
-                <h1
+                <p
                   className="text-5xl md:text-7xl text-center font-bold"
                   style={{
                     paddingTop: "5rem",
@@ -228,7 +228,7 @@ const Slider = () => {
                       // onType={handleType}
                     />
                   </span>
-                </h1>
+                </p>
               </h1>
               <p className="text-xl md:text-2xl text-center">
                 A vibrant display of various-sized bowls, each adorned with
