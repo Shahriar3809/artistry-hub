@@ -124,7 +124,7 @@ const [show, setShow] = useState(true);
                     {...register("name", { required: true })}
                     type="text"
                     placeholder="Name"
-                    className="p-5 rounded-md"
+                    className="p-5 text-black rounded-md"
                     required
                   />
 
@@ -135,7 +135,7 @@ const [show, setShow] = useState(true);
                     type="text"
                     {...register("photo")}
                     placeholder="Photo URL"
-                    className="p-5 rounded-md"
+                    className="p-5 text-black rounded-md"
                     required
                   />
 
@@ -146,7 +146,7 @@ const [show, setShow] = useState(true);
                     type="email"
                     {...register("email", { required: true })}
                     placeholder="Email"
-                    className=" p-5 rounded-md"
+                    className=" p-5 text-black rounded-md"
                     required
                   />
                 </div>
@@ -173,7 +173,7 @@ const [show, setShow] = useState(true);
                       onClick={() => {
                         setShow(!show);
                       }}
-                      className="absolute right-3 top-4 text-xl"
+                      className="absolute text-black right-3 top-4 text-xl"
                     >
                       {show ? <FaRegEye /> : <FaRegEyeSlash />}
                     </div>
