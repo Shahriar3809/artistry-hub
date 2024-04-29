@@ -24,7 +24,7 @@ const AddCraft = () => {
 
       const craftItem = {item_name, photo, sub_category_name, description, price, rating, customization, processing_time, stock_status, user_name, user_email}
       console.log(craftItem)
-
+      event.target.reset()
 
       // fetch("http://localhost:5001/painting", {
       //   method: "POST",

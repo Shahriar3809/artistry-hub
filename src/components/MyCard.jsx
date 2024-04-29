@@ -3,20 +3,19 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const ArtCard = ({ item , allData , setAllData}) => {
+const ArtCard = ({ item, setFilteredData, filteredData }) => {
   const {
     customization,
     _id,
     photo,
     item_name,
     description,
-      price,
+    price,
     processing_time,
-      rating,
+    rating,
     stock_status,
     //   sub_category_name,
   } = item;
-
 
   const handleDelete = (id) => {
     Swal.fire({
@@ -29,24 +28,21 @@ const ArtCard = ({ item , allData , setAllData}) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-
         fetch(`http://localhost:5001/crafts/${id}`, {
           method: "DELETE",
-
         })
-        .then(res=> res.json())
-        .then(data=> {
-          if(data.deletedCount > 0){
-            Swal.fire({
-              title: "Deleted!",
-              text: "Your Craft item has been deleted.",
-              icon: "success",
-            });
-            const remaining = allData.filter((item) => item._id != _id);
-            setAllData(remaining);
-          }
-        })
-
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.deletedCount > 0) {
+              Swal.fire({
+                title: "Deleted!",
+                text: "Your Craft item has been deleted.",
+                icon: "success",
+              });
+              const remaining = filteredData.filter((item) => item._id != _id);
+              setFilteredData(remaining);
+            }
+          });
 
         Swal.fire({
           title: "Deleted!",
@@ -55,7 +51,7 @@ const ArtCard = ({ item , allData , setAllData}) => {
         });
       }
     });
-  }
+  };
 
   return (
     <div className="card card-compact bg-base-100 shadow-xl">
@@ -107,7 +103,7 @@ const ArtCard = ({ item , allData , setAllData}) => {
 
 ArtCard.propTypes = {
   item: PropTypes.object,
-  allData: PropTypes.any,
-  setAllData: PropTypes.func
+  filteredData: PropTypes.any,
+  setFilteredData: PropTypes.func,
 };
 export default ArtCard;
