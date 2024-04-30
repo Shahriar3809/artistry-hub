@@ -1,4 +1,4 @@
-# Site Name: Dream Art And Craft
+# Site Name: Dream Art
 
 **Live Site URL:** [https://art-and-craft-assignment.web.app/](https://art-and-craft-assignment.web.app/)
 
