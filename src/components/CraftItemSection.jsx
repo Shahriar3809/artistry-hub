@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import ArtCard from "./ArtCard";
+import { AuthContext } from "../AuthProviders/AuthProvider";
 
 
 const CraftItemSection = () => {
     const [all, setAll] = useState(null)
+    const { loading } = useContext(AuthContext);
 
     useEffect(()=> {
         fetch("https://art-and-craft-server-two.vercel.app/crafts")
@@ -12,6 +14,18 @@ const CraftItemSection = () => {
     }, [])
 
     const allArtCraft = all?.slice(0, 6)
+    
+
+
+    if (loading) {
+      return (
+        <>
+          <div className="flex justify-center items-center">
+            <span className="loading loading-spinner loading-lg"></span>
+          </div>
+        </>
+      );
+    }
     
     return (
       <div>

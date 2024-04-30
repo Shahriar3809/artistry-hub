@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const MyCraft = () => {
 
-   const { user } = useContext(AuthContext);
+const { user, loading } = useContext(AuthContext);
 const { email } = user;
 const [originalData, setOriginalData] = useState(null);
 const [filteredData, setFilteredData] = useState(null);
@@ -32,12 +32,15 @@ const handleNo = () => {
 
 //----------------------------------------------
 
-
-
-
-
-
-
+if (loading) {
+  return (
+    <>
+      <div className="flex justify-center items-center">
+        <span className="loading loading-spinner loading-lg"></span>
+      </div>
+    </>
+  );
+}
 
     return (
       <div>
@@ -75,7 +78,7 @@ const handleNo = () => {
               ></MyCard>
             ))
           ) : (
-            <p className="">No Data Found</p>
+            <p className=""> </p>
           )}
         </div>
       </div>

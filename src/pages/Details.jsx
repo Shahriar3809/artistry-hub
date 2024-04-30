@@ -6,7 +6,7 @@ const Details = () => {
 
   const {
     customization,
-    user_name,
+    // user_name,
     // _id,
     photo,
     item_name,
@@ -49,7 +49,7 @@ const Details = () => {
             <p className="text-xl gap-1 flex items-center font-bold">
               Ratings: {rating} <FaRegStar />
             </p>
-            <p className="text-xl font-bold">Created by: {user_name}</p>
+            {/* <p className="text-xl font-bold">Created by: {user_name}</p> */}
           </div>
           <p>
             <span className="text-xl font-bold">Processing Time: </span>

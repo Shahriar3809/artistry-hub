@@ -49,7 +49,7 @@ const navigate = useNavigate();
    const handleGoogleLogin = () => {
      googleLogin()
        .then((result) => {
-         setUser(result.user);
+        //  setUser(result.user);
          console.log(result.user);
          navigate(location?.state ? location.state : "/");
        })
@@ -61,7 +61,8 @@ const navigate = useNavigate();
    const handleGithubLogin = () => {
      githubLogin()
        .then((result) => {
-         setUser(result.user);
+        //  setUser(result.user);
+        console.log(result.user)
          navigate(location?.state ? location.state : "/");
        })
        .catch((error) => {
