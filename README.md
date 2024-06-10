@@ -1,4 +1,4 @@
-# Site Name: Dream Art
+# Site Name: Artistry Hub
 
 **Live Site URL:** [https://art-and-craft-assignment.web.app/](https://art-and-craft-assignment.web.app/)
 
