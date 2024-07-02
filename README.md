@@ -25,3 +25,11 @@ Artistry Hub is an art showcase website where anyone can add art and craft items
 - **See all craft added by anyone**: Explore an array of artisanal creations from talented individuals worldwide with our 'See All Crafts' feature. Immerse yourself in a diverse showcase of craftsmanship, from handmade jewelry to woodworking marvels. Discover inspiration, support artisans, and find the perfect piece to complement your style
 
 
+
+
+
+
+## Run on Your Local Computer: Follow these steps
+- Install all packages from the `package.json` file.
+- Replace my API key with your own.
+- Execute using the command: `npm run dev`.
